@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f6b689c2.css",
+    "main.js": "/static/js/main.8c1a5b44.js",
+    "static/media/jate.png": "/static/media/jate.a06b8c17d267dd527ea8.png",
+    "static/media/tech.png": "/static/media/tech.211b868accd2e69b8800.png",
+    "static/media/chat.png": "/static/media/chat.fc11bc7a3616fbef4c7d.png",
+    "static/media/profile.png": "/static/media/profile.3ea9b10673cdfec62563.png",
+    "static/media/profilegen.jpeg": "/static/media/profilegen.8c1838cf308fff0bcc7e.jpeg",
+    "static/media/event.jpeg": "/static/media/event.53008b0cac4d33b2178c.jpeg",
+    "static/media/mywebsite.png": "/static/media/mywebsite.64d12be4d6f06de2555b.png",
+    "static/media/weather.jpeg": "/static/media/weather.0870f20709e39298ba4d.jpeg",
+    "static/media/movie.jpeg": "/static/media/movie.2987609e6356b62bf2fc.jpeg",
+    "static/media/scheduler.jpeg": "/static/media/scheduler.bd57c77c2330d96f8e3b.jpeg",
+    "static/media/reviews.jpeg": "/static/media/reviews.07624a12432a15784ee4.jpeg",
+    "static/media/congress.jpeg": "/static/media/congress.bf893183e7b8e961b3ae.jpeg",
+    "static/media/quiz.jpeg": "/static/media/quiz.abfc8f039edb3767ca0b.jpeg",
+    "static/media/note.jpeg": "/static/media/note.ee019cc7aee42097f1fd.jpeg",
+    "index.html": "/index.html",
+    "main.f6b689c2.css.map": "/static/css/main.f6b689c2.css.map",
+    "main.8c1a5b44.js.map": "/static/js/main.8c1a5b44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6b689c2.css",
+    "static/js/main.8c1a5b44.js"
+  ]
+}
