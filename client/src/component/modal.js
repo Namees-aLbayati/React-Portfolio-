@@ -1,10 +1,12 @@
 import React from 'react'
-
+import {gql} from '@apollo/client';
+import {QUERY_COMMENT} from '../utils/queries'
 import { useMutation } from '@apollo/client'
 import { ADD_COMMENT } from '../utils/mutation'
 import { useQuery } from "@apollo/client";
-import { QUERY_COMMENT } from '../utils/queries';
+import { QUERY_PROJECT1 } from '../utils/queries';
 import { useParams } from 'react-router-dom';
+import {QUERY_PRCO} from '../utils/queries'
 
 import Comment from './comment';
 
@@ -29,7 +31,22 @@ export default function Mymodal({settry}) {
 
 
 
-  const [addComment, { error }] = useMutation(ADD_COMMENT)
+  const [addComment, { error }] = useMutation(ADD_COMMENT,{
+    update(cache,{data:{addComment}}){
+      try{
+     const {tryy}=cache.readQuery({query:QUERY_COMMENT})
+    console.log('CACHHHH READ',tryy)
+     cache.writeQuery({
+       query:QUERY_PRCO,
+       data:{profiles:[...tryy,addComment]}
+     })
+
+    
+      }catch(e){
+        console.error(e)
+      }
+    }
+  })
 
 
 
@@ -66,7 +83,6 @@ export default function Mymodal({settry}) {
 
 
 
-console.log('settry2',settry2)
 
   return (
     <div class='d-flex justify-content-center m-1 p-2'>

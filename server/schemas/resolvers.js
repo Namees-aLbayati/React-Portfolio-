@@ -15,7 +15,8 @@ const resolvers={
         },
         users:async()=>{
 return await User.find({})
-        }
+        },
+     
 
     },
     Mutation:{

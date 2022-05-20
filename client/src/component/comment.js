@@ -8,7 +8,6 @@ export default function Comment() {
 {      variables: { profileId:projectId },
 }      );
   const comments=data?.profile.comment||[]
-console.log('comments',comments)
 
   return (
     <div class='m-4'>

@@ -30,6 +30,10 @@ query project($profileId: ID!){
   profile(profileId: $profileId) {
     title
     description
+    comment {
+      username
+      comment
+    }
   }
 }
 
